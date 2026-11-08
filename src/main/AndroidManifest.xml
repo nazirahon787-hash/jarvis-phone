@@ -18,9 +18,15 @@
     </queries>
 
     <application
+        android:name=".CrashApp"
         android:allowBackup="false"
         android:label="Jarvis"
         android:theme="@android:style/Theme.DeviceDefault.NoActionBar">
+
+        <activity
+            android:name=".CrashActivity"
+            android:exported="false"
+            android:process=":crash" />
 
         <activity
             android:name=".MainActivity"
